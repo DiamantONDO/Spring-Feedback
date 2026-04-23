@@ -100,7 +100,7 @@ onMounted(fetchFeedbacks);
       <div class="header-inner">
         <div class="logo">
           <span class="logo-icon"></span>
-          <span class="logo-text">FeedbackHub</span>
+          <span class="logo-text">AnthonyFeedback</span>
         </div>
         <div class="average-pill" v-if="feedbacks.length > 0">
           <span>⭐ Average Rating:</span>
@@ -124,7 +124,7 @@ onMounted(fetchFeedbacks);
           <input
             v-model="form.name"
             type="text"
-            placeholder="e.g. John Doe"
+            placeholder="e.g. Anthony"
             class="input"
           />
         </div>
@@ -155,7 +155,7 @@ onMounted(fetchFeedbacks);
         </div>
 
         <button class="submit-btn" @click="submitFeedback" :disabled="submitting">
-          {{ submitting ? "Submitting..." : "Submit Feedback →" }}
+          {{ submitting ? "Submitting..." : "Submit Feedback" }}
         </button>
       </div>
 
